@@ -31,7 +31,6 @@ License:	Apache License
 Group:		Development/C++
 BuildArch:      noarch
 Requires:	boost-devel
-Requires:	%{libname} = %{version}-%{release}
 
 %description -n %{devname}
 cereal is a header-only C++11 serialization library. cereal takes arbitrary
