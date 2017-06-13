@@ -11,7 +11,7 @@ License:	BSD
 Group:		System/Libraries
 URL:		https://uscilab.github.com/%{name}
 Source0:	https://github.com/USCiLab/%{name}/archive/v%{version}/%{name}-%{version}.tar.gz
-
+Patch0:		https://github.com/USCiLab/cereal/commit/8b8f5814e292e03bb5b07333a0e634ef0481c85b.patch
 BuildRequires:	boost-devel
 BuildRequires:	cmake
 BuildRequires:	doxygen
@@ -53,6 +53,7 @@ devlopper.
 %setup -q
 
 %build
+%apply_patches
 %global optflags %{optflags} -Wno-gnu
 
 %cmake \
