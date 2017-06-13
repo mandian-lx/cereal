@@ -53,6 +53,8 @@ devlopper.
 %setup -q
 
 %build
+%global optflags %{optflags} -Wno-gnu
+
 %cmake \
 	-DSKIP_PORTABILITY_TEST:BOOL=ON	\
 	-DTHREAD_SAFE:BOOL=ON		\
