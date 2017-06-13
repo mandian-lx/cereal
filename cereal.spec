@@ -6,7 +6,7 @@
 Summary:	A C++11 library for serialization
 Name:		cereal
 Version:	1.2.2
-Release:	0
+Release:	1
 License:	BSD
 Group:		System/Libraries
 URL:		https://uscilab.github.com/%{name}
@@ -47,6 +47,8 @@ devlopper.
 %{_datadir}/cmake/%{name}/%{name}-config.cmake
 %doc README.md
 %doc LICENSE
+
+#----------------------------------------------------------------------------
 
 %prep
 %setup -q
